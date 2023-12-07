@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" type = "text/css" href="calculator_page.css"><!--連結css檔案-->
+</head>
+
+<body>
+    <header>
+        <div>
+            <div id="name">Name</div>
+            <button id="home">Home</button><!--新增home鍵-->
+            <button id="fitness_calculator">Fitness Calculator</button>
+            <select id="fitness_gear"><!--健身器材介紹下拉選單-->
+                <option value="gear1">gear1</option>
+                <option value="gear2">gear2</option>
+                <option value="gear3">gear3</option>
+                <option value="gear4">gear4</option>
+            </select>
+            <select id="fitness_tutorial"><!--健身教學下拉選單-->
+                <option value="Chest">Chest</option>
+                <option value="Back">Back</option>
+                <option value="Arm">Arm</option>
+                <option value="Leg">Leg</option>
+            </select> 
+        </div>
+    </header>
+    
+    <main>
+        <div id="Cover"><!--封面-->
+            <div id="input_data">
+                <input type="number" id="age" placeholder="年齡(歲)">
+                <input type="number" id="height" placeholder="身高(cm)">
+                <input type="number" id="weight" placeholder="體重(kg)">
+                <div id="radio_input">
+                    <label><input name="sex" type="radio" id="boy">男</label>
+                    <label><input name="sex" type="radio" id="girl">女</label>
+                </div>
+                <button id="start">開始計算</button>
+            </div>
+
+            <div id="daily_intake">
+                <h1>我一天的熱量攝取</h1>
+                <div id="BMR">您的BMR = </div>
+                <div id="type1">生活型態偏向座式(例如久坐、臥床、看電視) TEDD =</div>
+                <div id="type2">從事不太費力的運動(例如散步、開車、烹飪) TEDD =</div>
+                <div id="type3">有規律運動的習慣(例如腳踏車、健走、慢跑) TEDD =</div>
+                <div id="type4">平時活動程度較高(例如打籃球、游泳、登山) TEDD =</div>
+                <div id="type5">會進行高強度的訓練(例如長跑、健身、格鬥) TEDD =</div>
+            </div>
+
+            <div id="muscle_buliding_intake">
+                <h1>如果想練壯!!!務必這樣吃</h1>
+                <br>
+                <div id="protine">蛋白攝取 = </div>
+                <div id="carbon">脂肪攝取 = </div>
+                <div id="fat">碳水攝取 = </div>
+            </div>
+        </div>
+        <hr>
+        <div id="WebInformation"></div><!--網站使用說明/作者介紹-->
+    </main>
+
+    <footer>
+        <div id="Download"></div><!--網站說明文件下載-->
+    </footer>
+    <script src = "fitness_calculator.js"></script><!--連結js檔案-->
+</body>
+
+</html>
