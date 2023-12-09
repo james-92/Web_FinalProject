@@ -1,0 +1,132 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color:black;
+    color: #333;
+    text-align: center;
+}
+
+header {
+    background-color: #ff9900;
+    padding: 12px;
+    color: #0f0101;
+    display: flex;
+    justify-content:center;
+}
+
+main {
+    padding: 20px;
+}
+
+header div {
+    display: flex;
+    align-items: stretch;
+}
+
+header div select {
+    margin-left: 10px;
+    padding: 8px;
+    font-size: 16px;
+    width: 200px;
+}
+
+hr{
+    background-color: #ff9900;
+    height: 2px;
+    width:100%
+}
+
+#fitness_calculator,
+#home,
+#name,
+#fitness_gear,
+#fitness_tutorial{
+    width: 100px;
+    margin: 10px;
+}
+
+#name{
+    font-size: large;
+    align-self: center; /* 垂直居中 */
+}
+/*---------以上為header範圍----------*/
+
+
+
+
+
+#Cable_single/*單一器材 BY.昌*/
+{
+    color: aliceblue;
+    float: left;
+    
+}
+
+#name_of_tool/*器材名稱 BY.昌*/
+{
+    font-size:xx-large;
+    color: aqua; /*我知道很醜 我想把他們做出區別 BY.昌*/
+    display: flex;
+}
+
+#discription/*器材描述 BY.昌*/
+{
+    font-size: medium;
+    color: #ff9900;/*我知道很醜 我想把他們做出區別 BY.昌*/
+    float: left;
+    text-align: left;/*向左對齊不然他會跑掉*/
+}
+
+
+#input_data{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#input_data input{
+    padding:8px;
+    width: 50%;
+}
+
+#start{
+    width:53.5%;
+    
+}
+
+#radio_input{/*選性別*/
+    display: flex;
+    float: left;
+    margin-right: 10px; 
+    color:white;
+}
+
+input[type="radio"] {/*讓radio變大1.5倍*/
+    transform: scale(1.5);
+}
+
+#Cover{
+    display: flex;
+    justify-content: space-between;
+}
+ 
+ #input_data,
+ #daily_intake,
+ #muscle_buliding_intake {
+    width: 30%; /*讓每個區塊都保持1/3的寬度*/
+    color: white;
+    margin: 5px;
+ }
+
+ #type1,
+ #type2,
+ #type3,
+ #type4,
+ #type5 {/*讓kcak前面不要換行*/
+    white-space: nowrap;
+ }
+
+ #WebInformation:hover/*加上華上去會換顏色 然後這邊是不是用<a herf>會比較好?畢竟感覺藥用超連結 BY.昌*/
+ {
+    color: white;
+ }
