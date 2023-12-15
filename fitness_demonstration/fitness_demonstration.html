@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demonstration</title>
+    <link rel="stylesheet" type = "text/css" href="fitness_demonstration.css"><!--<連結css檔案-->
+    
+</head>
+
+<body>
+    <header>
+        <div>
+            <div id="name">Name</div>
+            <button id="home">Home</button><!--新增home鍵-->
+            <button id="fitness_calculator">Fitness Calculator</button>
+            <button id="fitness_equipment">Fitness Equipment</button>
+            <button id="fitness_tutorial">Fitness Tutorial</button>
+            <button id="fitness_demonstration">Fitness Demonstration</button>
+            
+        </div>
+    </header>
+    
+    <main>
+        <h1>Click links for more video demonstrations!</h1>
+        <div id="Cover"><!--影片內容--></div>
+        <script>
+            const jsonData={
+                "exercises": [{
+                    "id": 0,
+                    "name": "Oblique twist",
+                    "video": "https://vimeo.com/178079508"
+                }, {
+                    "id": 1,
+                    "name": "Benchpress",
+                    "video": "https://vimeo.com/178057019"
+                }, {
+                    "id": 2,
+                    "name": "Deadlift",
+                    "video": "https://vimeo.com/178056325"
+                }, {
+                    "id": 3,
+                    "name": "Squat",
+                    "video": "https://vimeo.com/178056008"
+                }, {
+                    "id": 4,
+                    "name": "Tricep pulldown",
+                    "video": "https://vimeo.com/178054967"
+                }, {
+                    "id": 5,
+                    "name": "Pulley crunch",
+                    "video": "https://vimeo.com/178052126"
+                }, {
+                    "id": 6,
+                    "name": "Floor crunch",
+                    "video": "https://vimeo.com/178050912"
+                }, {
+                    "id": 7,
+                    "name": "Overhead tricep extension",
+                    "video": "https://vimeo.com/178050262"
+                }, {
+                    "id": 8,
+                    "name": "Dumbbell press",
+                    "video": "https://vimeo.com/178048727"
+                }, {
+                    "id": 9,
+                    "name": "Forearm curl back (15 reps)",
+                    "video": "https://vimeo.com/178047269"
+                }, {
+                    "id": 10,
+                    "name": "Forearm curl in (15 reps)",
+                    "video": "https://vimeo.com/178047269"
+                }, {
+                    "id": 11,
+                    "name": "Seated pulley row",
+                    "video": "https://vimeo.com/178042607"
+                }, {
+                    "id": 12,
+                    "name": "Shrug",
+                    "video": "https://vimeo.com/177971664"
+                }, {
+                    "id": 13,
+                    "name": "Calf raise",
+                    "video": "https://vimeo.com/177971348"
+                }, {
+                    "id": 14,
+                    "name": "Dumbbell romanian deadlift",
+                    "video": "https://vimeo.com/177971032"
+                }, {
+                    "id": 15,
+                    "name": "Forearm curl up (25 reps)",
+                    "video": "https://vimeo.com/177970644"
+                }, {
+                    "id": 16,
+                    "name": "Dumbbell squat",
+                    "video": "https://vimeo.com/177970342"
+                }, {
+                    "id": 17,
+                    "name": "Front raise",
+                    "video": "https://vimeo.com/177969758"
+                }, {
+                    "id": 18,
+                    "name": "Julian tricep extension",
+                    "video": "https://vimeo.com/177969524"
+                }, {
+                    "id": 19,
+                    "name": "Bicep curl",
+                    "video": "https://vimeo.com/177968823"
+                }, {
+                    "id": 20,
+                    "name": "Dumbbell incline press",
+                    "video": "https://vimeo.com/177967959"
+                }, {
+                    "id": 21,
+                    "name": "Side raise",
+                    "video": "https://vimeo.com/177961354"
+                }, {
+                    "id": 22,
+                    "name": "Hand grippers",
+                    "video": "https://vimeo.com/177766222"
+                }, {
+                    "id": 23,
+                    "name": "Dumbbell shoulder press",
+                    "video": "https://www.vimeo.com/151248907"
+                }, {
+                    "id": 24,
+                    "name": "Overhead press",
+                    "video": "https://vimeo.com/96081016"
+                }, {
+                    "id": 25,
+                    "name": "Hamstring curl",
+                    "video": "https://vimeo.com/164443477"
+                }, {
+                    "id": 26,
+                    "name": "Lat pulldown",
+                    "video": "https://vimeo.com/164080300"
+                }]
+            }
+
+            document.addEventListener("DOMContentLoaded",function(){
+                displayJsonData(jsonData);
+            },false);
+
+            function displayJsonData(jsonData){
+                const Cover = document.getElementById("Cover");
+                for(let exercise of jsonData.exercises){
+                    let content=
+                        '<div class="card">'+
+                            '<a href="'+exercise.video+'" target="_blank">'+'<h2>'+exercise.name+'</h2>'+'</a>'+
+                        '</div>';
+                    Cover.innerHTML+=content;
+                }
+            }
+        </script>
+        <hr>
+        <div id="WebInformation"></div><!--網站使用說明/作者介紹-->
+    </main>
+
+    <footer>
+        <div id="Download"></div><!--網站說明文件下載-->
+    </footer>
+    <script src = "fitness_demonstration.js"></script><!--連結js檔案-->
+</body>
+
+</html>

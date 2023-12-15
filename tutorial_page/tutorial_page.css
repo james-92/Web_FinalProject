@@ -45,6 +45,7 @@ hr{
     width: 100px;
     margin: 10px;
 }
+
 #name{
     font-size: large;
     align-self: center; /* 垂直居中 */

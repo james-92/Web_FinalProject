@@ -39,8 +39,9 @@ hr{
 #fitness_calculator,
 #home,
 #name,
-#fitness_gear,
-#fitness_tutorial{
+#fitness_equipment,
+#fitness_tutorial,
+#fitness_demonstration{
     width: 100px;
     margin: 10px;
 }
