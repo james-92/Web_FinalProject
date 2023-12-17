@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background-color: #ff9900;
+    background-color: #d1b47b65;
     padding: 12px;
     color: #0f0101;
     display: flex;
@@ -27,11 +27,11 @@ header div select {
     margin-left: 10px;
     padding: 8px;
     font-size: 16px;
-    width: 100px;
+    width: 200px;
 }
 
 hr{
-    background-color: #ff9900;
+    background-color:#f8ebb0;
     height: 2px;
     width:100%
 }
@@ -47,63 +47,30 @@ hr{
 }
 
 #name{
-    font-size: large;
-    align-self: center; /* 垂直居中 */
-}
-/*---------以上為header範圍----------*/
-
-
-
-
-
-
-
-
-#input_data{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    font-family:Papyrus, fantasy;
+    font-size:120%;
+    align-self:center; /* 垂直居中 */
+    color: #f8ebb0;
 }
 
-#input_data input{
-    padding:8px;
-    width: 50%;
+#fitness_calculator,
+#home,
+#fitness_equipment,
+#fitness_tutorial,
+#fitness_demonstration{/*buttom改變大小*/
+    border-radius: 20px; /* 調整 border-radius 以改變按鈕形狀 */
+    cursor: pointer;
+    border-color: rgb(135, 129, 129);
+    background-image: url('metal_texture.jpg'); /* 替換成你的圖片路徑 */
+    background-size: cover;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5); /* 增加陰影效果 */
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 78%;
 }
-
-#start{
-    width:53.5%;
-    
-}
-
-#radio_input{/*選性別*/
-    display: flex;
-    float: left;
-    margin-right: 10px; 
-    color:white;
-}
-
-input[type="radio"] {/*讓radio變大1.5倍*/
-    transform: scale(1.5);
-}
- 
- #input_data,
- #daily_intake,
- #muscle_buliding_intake {
-    width: 30%; /*讓每個區塊都保持1/3的寬度*/
-    color: white;
-    margin: 5px;
- }
-
- #type1,
- #type2,
- #type3,
- #type4,
- #type5 {/*讓kcak前面不要換行*/
-    white-space: nowrap;
- }
 /*--------------------以下為Cover內容------------------------*/
  h2{
-    color:aquamarine;
+    color:#f8ebb0;
+    font-family:Papyrus, fantasy;
  }
 
  #Cover {
@@ -113,11 +80,15 @@ input[type="radio"] {/*讓radio變大1.5倍*/
 }
 
 .card {
-    border: 1px solid #ddd; /* 外框樣式 */
+    border: 2px solid #f4efd3; /* 外框樣式 */
     padding: 10px;
     margin: 10px;
     width: calc(31.33%); /* 計算每個卡片的寬度（三列） */
     box-sizing: border-box; /* 考慮邊框和填充在內部寬度中 */
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border-top-left-radius: 100px;
 }
 
 .card:hover {
@@ -129,5 +100,31 @@ a{
 }
 
 h1{
-    color:darkcyan
+    color:burlywood;
+    font-family:Papyrus, fantasy;
+}
+#WebInformation{
+    color: #f8ebb0;
+    font-size: small;
+ }
+/*------------以下為footer範圍-----------*/
+footer {
+    background-color: rgba(128, 128, 128, 0.5); /* 使用RGBA来设置颜色和透明度 */
+    padding: 20px; /* 可选：添加一些内边距以增加美观性 */
+}
+ 
+#Download a{
+    color: #f8ebb0;
+    text-decoration: none;
+    font-family:Papyrus, fantasy;
+    font-size: small;
+}
+
+#Download{
+    border: 1px solid #f8ebb0;
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 60%;
+    background-color: rgb(88, 80, 67);
 }
