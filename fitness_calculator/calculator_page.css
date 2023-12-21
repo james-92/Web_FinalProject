@@ -159,7 +159,6 @@ input[type="radio"] {/*讓radio變大1.5倍*/
     width: 100%;
     height: 600px;
     background-color: black;
-    margin-left: 75px;
 }
  
 #input_data,
@@ -169,11 +168,12 @@ input[type="radio"] {/*讓radio變大1.5倍*/
     color: white;
     margin: 5px;
     padding: 20px; /* Add padding for better spacing */
-    overflow-y: auto; /* Add scrollbar if content exceeds height */
+    /*overflow-y: auto; /* Add scrollbar if content exceeds height */
 }
 
 #input_data {
     width: 30%; /* Adjust the width for input data */
+    padding-left: 50px;
 }
 
 #daily_intake,
@@ -190,7 +190,7 @@ input[type="radio"] {/*讓radio變大1.5倍*/
 }
 
 #muscle_buliding_intake {
-    margin: 16% 15%; /* Add space between sections */
+    margin: 20% 15%; /* Add space between sections */
     text-align: center;
     align-content: center;
     flex-wrap: wrap;
