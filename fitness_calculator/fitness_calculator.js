@@ -135,7 +135,7 @@ function displayNutrientValues(protine_kcal, fat_kcal, BMR) {
 
     document.getElementById("protine").textContent = "蛋白攝取 = " + protine.toFixed(1) + "g";
     document.getElementById("fat").textContent = "脂肪攝取 = " + fat.toFixed(1) + "g";
-    document.getElementById("carbon").textContent = "碳水化合物攝取 = " + carbon.toFixed(1) + "g";
+    document.getElementById("carbon").textContent = "碳水攝取 = " + carbon.toFixed(1) + "g";
 }
 
 window.addEventListener("load", start, false);

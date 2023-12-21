@@ -1,9 +1,17 @@
+@font-face 
+{
+    font-family: Corn;
+    src: url(CornDemo-Regular.ttf);
+}
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color:black;
+    background-color: black;
     color: #333;
     text-align: center;
+    width: 100%;
+    height: 600px;
+    z-index: -1;
 }
 
 header {
@@ -47,10 +55,13 @@ hr{
 }
 
 #name{
-    font-family:Papyrus, fantasy;
-    font-size:120%;
-    align-self:center; /* 垂直居中 */
+    font-family:'Corn'; /*新的字體*/
+    font-size:140%;
+    font-weight: bolder;/*配合字體大小*/
+    margin-left: -300px;/*移動到左邊*/
+    align-self:center;  /*垂直居中 */
     color: #f8ebb0;
+    position: absolute;
 }
 
 #fitness_calculator,
@@ -71,50 +82,107 @@ hr{
 #input_data{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    position: relative;
+    justify-content: space-evenly;
+    padding-top: 50px;
 }
 
 #input_data input{
-    padding:8px;
-    width: 50%;
+    padding:10px;
+    margin-left: 30px;
+    width: 90%;
 }
 
 #start{
-    width:53.5%;
-    
+    width:93%;
+    margin-left: 30px;
+    padding: 10pxs;
 }
 
-#radio_input{/*選性別*/
+#radio_input {/*選性別*/
     display: flex;
     float: left;
-    margin-right: 10px; 
-    color:white;
+    padding-left: 38%; /* Adjust the padding to increase space */
+    color: white;
+    position: relative;
+}
+
+#gender
+{
+    position: absolute;
+    margin-left: 7%;    
+    margin-top: 5%;
+    font-size: xx-large;
+    font-weight: bolder;
 }
 
 input[type="radio"] {/*讓radio變大1.5倍*/
-    transform: scale(1.5);
+    transform: scale(2.5);
 }
 
-#Cover{
+#Cover {
     display: flex;
-    justify-content: space-between;
+    background-image: url('background4.jpg'); /* Add your background image URL here */
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    background-color: black;
 }
  
- #input_data,
- #daily_intake,
- #muscle_buliding_intake {
-    width: 30%; /*讓每個區塊都保持1/3的寬度*/
+#input_data,
+#daily_intake,
+#muscle_buliding_intake {
+    flex: 1; /* Make the sections flexible to adjust based on content */
     color: white;
     margin: 5px;
- }
+    padding: 20px; /* Add padding for better spacing */
+    overflow-y: auto; /* Add scrollbar if content exceeds height */
+}
 
- #type1,
- #type2,
- #type3,
- #type4,
- #type5 {/*讓kcak前面不要換行*/
-    white-space: nowrap;
- }
+#input_data {
+    width: 30%; /* Adjust the width for input data */
+}
+
+#daily_intake,
+#muscle_buliding_intake {
+    width: 40%; /* Adjust the width for daily intake and muscle building */
+    height: 50%; /* Set the height of each section */
+}
+
+#daily_intake {
+    margin-bottom: 10px; /* Add space between sections */
+    text-align: center;
+    margin: 0% 45%;
+    position: absolute;
+}
+
+#muscle_buliding_intake {
+    margin: 20% 15%; /* Add space between sections */
+    text-align: center;
+    align-content: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+#BMR,
+#type1,
+#type2,
+#type3,
+#type4,
+#type5,
+#protine,
+#carbon,
+#fat {
+    margin-bottom: 10px; /* Add space between individual descriptions */
+}
+
+/* Adjusting the text layout */
+#daily_intake h1,
+#muscle_buliding_intake h1 {
+    margin-bottom: 20px; /* Add space below the headings */
+}
+
  #WebInformation{
     color: #f8ebb0;
     font-size: small;

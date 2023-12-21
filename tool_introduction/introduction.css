@@ -1,3 +1,10 @@
+@import url("https://fonts.googleapis.com/css?family=Share+Tech+Mono");
+
+@font-face 
+{
+    font-family: Corn;
+    src: url(CornDemo-Regular.ttf);
+}
 
 body {
     font-family: 'Arial', sans-serif;
@@ -13,7 +20,6 @@ header {
     display: flex;
     justify-content:center;
 }
-
 main {
     padding: 20px;
 }
@@ -42,15 +48,19 @@ hr{
 #fitness_equipment,
 #fitness_tutorial,
 #fitness_demonstration{
+    font-family:Papyrus, fantasy;
     width: 100px;
     margin: 10px;
 }
 
 #name{
-    font-family:Papyrus, fantasy;
-    font-size:120%;
-    align-self:center; /* 垂直居中 */
+    font-family:'Corn'; /*新的字體*/
+    font-size:140%;
+    font-weight: bolder;/*配合字體大小*/
+    margin-left: -300px;/*移動到左邊*/
+    align-self:center;  /*垂直居中 */
     color: #f8ebb0;
+    position: absolute;
 }
 
 #fitness_calculator,
@@ -69,34 +79,54 @@ hr{
 }
 /*---------以上為header範圍----------*/
 
-
-
-
-
-#Cable_single/*單一器材 BY.昌*/
-{
-    color: aliceblue;
-    float: left;
-    
-}
-
-#name_of_tool/*器材名稱 BY.昌*/
-{
+h1{
+    text-align: center;
+    color:#f8ebb0;
+    font-family:Arial, Helvetica, sans-serif;
     font-size:xx-large;
-    color: aqua; /*我知道很醜 我想把他們做出區別 BY.昌*/
+}
+h2{
+    text-align: left;
+    color:#f8ebb0;
+    font-size:250%;
+}
+
+#chest,#arm,#back,#leg{
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    ;
 }
 
-#discription/*器材描述 BY.昌*/
+#notification
 {
-    font-size: medium;
-    color: #ff9900;/*我知道很醜 我想把他們做出區別 BY.昌*/
-    float: left;
-    text-align: left;/*向左對齊不然他會跑掉*/
+    font-size: 150%;
+    color: #f8ebb0;
 }
 
+#tool_name{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    float: left;
+    justify-content: center;
+    margin: 100px;
+}
+#discription{
+    float: left;
+    text-align: left;
+    color: #f8ebb0;
+}
 
- #WebInformation{
+#photo img{
+    height: 500px;
+    width: 500px;
+    float: left;
+    margin-right: 3px;
+}
+
+#WebInformation{
     color: #f8ebb0;
     font-size: small;
  }

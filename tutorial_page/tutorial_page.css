@@ -1,4 +1,8 @@
-
+@font-face 
+{
+    font-family: Corn;
+    src: url(CornDemo-Regular.ttf);
+}
 body {
     font-family: 'Arial', sans-serif;
     background-color:black;
@@ -47,10 +51,13 @@ hr{
 }
 
 #name{
-    font-family:Papyrus, fantasy;
-    font-size:120%;
-    align-self:center; /* 垂直居中 */
+    font-family:'Corn'; /*新的字體*/
+    font-size:140%;
+    font-weight: bolder;/*配合字體大小*/
+    margin-left: -300px;/*移動到左邊*/
+    align-self:center;  /*垂直居中 */
     color: #f8ebb0;
+    position: absolute;
 }
 
 #fitness_calculator,
@@ -90,7 +97,7 @@ h2{
     display: flex;
     flex-direction: column;
     float: left;
-    margin:40px
+    margin :40px;
 }
 #discription{
     text-align: left;
